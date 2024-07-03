@@ -1,0 +1,497 @@
+$comment
+	File created using the following command:
+		vcd file Sequential_Comp.msim.vcd -direction
+$end
+$date
+	Wed Jul 03 14:24:35 2024
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module counter_4bit_vhd_vec_tst $end
+$var wire 1 ! CLK $end
+$var wire 1 " Q [3] $end
+$var wire 1 # Q [2] $end
+$var wire 1 $ Q [1] $end
+$var wire 1 % Q [0] $end
+$var wire 1 & RESET $end
+
+$scope module i1 $end
+$var wire 1 ' gnd $end
+$var wire 1 ( vcc $end
+$var wire 1 ) unknown $end
+$var wire 1 * devoe $end
+$var wire 1 + devclrn $end
+$var wire 1 , devpor $end
+$var wire 1 - ww_devoe $end
+$var wire 1 . ww_devclrn $end
+$var wire 1 / ww_devpor $end
+$var wire 1 0 ww_CLK $end
+$var wire 1 1 ww_RESET $end
+$var wire 1 2 ww_Q [3] $end
+$var wire 1 3 ww_Q [2] $end
+$var wire 1 4 ww_Q [1] $end
+$var wire 1 5 ww_Q [0] $end
+$var wire 1 6 \RESET~inputclkctrl_INCLK_bus\ [3] $end
+$var wire 1 7 \RESET~inputclkctrl_INCLK_bus\ [2] $end
+$var wire 1 8 \RESET~inputclkctrl_INCLK_bus\ [1] $end
+$var wire 1 9 \RESET~inputclkctrl_INCLK_bus\ [0] $end
+$var wire 1 : \CLK~inputclkctrl_INCLK_bus\ [3] $end
+$var wire 1 ; \CLK~inputclkctrl_INCLK_bus\ [2] $end
+$var wire 1 < \CLK~inputclkctrl_INCLK_bus\ [1] $end
+$var wire 1 = \CLK~inputclkctrl_INCLK_bus\ [0] $end
+$var wire 1 > \Q[0]~output_o\ $end
+$var wire 1 ? \Q[1]~output_o\ $end
+$var wire 1 @ \Q[2]~output_o\ $end
+$var wire 1 A \Q[3]~output_o\ $end
+$var wire 1 B \CLK~input_o\ $end
+$var wire 1 C \CLK~inputclkctrl_outclk\ $end
+$var wire 1 D \count[0]~3_combout\ $end
+$var wire 1 E \RESET~input_o\ $end
+$var wire 1 F \RESET~inputclkctrl_outclk\ $end
+$var wire 1 G \count[1]~0_combout\ $end
+$var wire 1 H \count[2]~1_combout\ $end
+$var wire 1 I \count[3]~2_combout\ $end
+$var wire 1 J count [3] $end
+$var wire 1 K count [2] $end
+$var wire 1 L count [1] $end
+$var wire 1 M count [0] $end
+$var wire 1 N \ALT_INV_RESET~inputclkctrl_outclk\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0&
+0'
+1(
+x)
+1*
+1+
+1,
+1-
+1.
+1/
+00
+01
+0>
+0?
+0@
+0A
+0B
+0C
+1D
+0E
+0F
+0G
+0H
+0I
+1N
+02
+03
+04
+05
+0J
+0K
+0L
+0M
+1:
+1;
+1<
+0=
+16
+17
+18
+09
+0"
+0#
+0$
+0%
+$end
+#25000
+1!
+10
+1B
+1=
+1C
+1M
+0D
+1G
+1>
+15
+1%
+#50000
+0!
+00
+0B
+0=
+0C
+#75000
+1!
+10
+1B
+1=
+1C
+0M
+1L
+1D
+1?
+0>
+14
+05
+0%
+1$
+#100000
+0!
+00
+0B
+0=
+0C
+#125000
+1!
+10
+1B
+1=
+1C
+1M
+0D
+0G
+1H
+1>
+15
+1%
+#150000
+0!
+00
+0B
+0=
+0C
+#175000
+1!
+10
+1B
+1=
+1C
+0M
+0L
+1K
+1D
+1@
+0?
+0>
+13
+04
+05
+0%
+0$
+1#
+#200000
+0!
+00
+0B
+0=
+0C
+#225000
+1!
+10
+1B
+1=
+1C
+1M
+0D
+1G
+1>
+15
+1%
+#250000
+0!
+00
+0B
+0=
+0C
+#275000
+1!
+10
+1B
+1=
+1C
+0M
+1L
+1D
+1?
+0>
+14
+05
+0%
+1$
+#300000
+0!
+00
+0B
+0=
+0C
+#325000
+1!
+10
+1B
+1=
+1C
+1M
+0D
+0G
+0H
+1I
+1>
+15
+1%
+#350000
+0!
+00
+0B
+0=
+0C
+#375000
+1!
+10
+1B
+1=
+1C
+0M
+0L
+0K
+1J
+1D
+1A
+0@
+0?
+0>
+12
+03
+04
+05
+0%
+0$
+0#
+1"
+#400000
+0!
+00
+0B
+0=
+0C
+#425000
+1!
+10
+1B
+1=
+1C
+1M
+0D
+1G
+1>
+15
+1%
+#450000
+0!
+00
+0B
+0=
+0C
+#475000
+1!
+10
+1B
+1=
+1C
+0M
+1L
+1D
+1?
+0>
+14
+05
+0%
+1$
+#500000
+0!
+00
+0B
+0=
+0C
+#525000
+1!
+10
+1B
+1=
+1C
+1M
+0D
+0G
+1H
+1>
+15
+1%
+#550000
+0!
+00
+0B
+0=
+0C
+#575000
+1!
+10
+1B
+1=
+1C
+0M
+0L
+1K
+1D
+1@
+0?
+0>
+13
+04
+05
+0%
+0$
+1#
+#600000
+0!
+00
+0B
+0=
+0C
+#625000
+1!
+10
+1B
+1=
+1C
+1M
+0D
+1G
+1>
+15
+1%
+#650000
+0!
+00
+0B
+0=
+0C
+#675000
+1!
+10
+1B
+1=
+1C
+0M
+1L
+1D
+1?
+0>
+14
+05
+0%
+1$
+#680000
+1&
+11
+1E
+19
+1F
+0N
+0L
+0K
+0J
+0G
+0H
+0I
+0A
+0@
+0?
+02
+03
+04
+0$
+0#
+0"
+#700000
+0!
+00
+0B
+0=
+0C
+#725000
+1!
+10
+1B
+1=
+1C
+#750000
+0!
+00
+0B
+0=
+0C
+#775000
+1!
+10
+1B
+1=
+1C
+#800000
+0!
+00
+0B
+0=
+0C
+#825000
+1!
+10
+1B
+1=
+1C
+#850000
+0!
+00
+0B
+0=
+0C
+#875000
+1!
+10
+1B
+1=
+1C
+#900000
+0!
+00
+0B
+0=
+0C
+#925000
+1!
+10
+1B
+1=
+1C
+#950000
+0!
+00
+0B
+0=
+0C
+#975000
+1!
+10
+1B
+1=
+1C
+#1000000
