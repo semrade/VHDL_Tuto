@@ -1,8 +1,8 @@
-# do Sequential_Comp.do
+# do Combanition_com.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:24:34 on Jul 03,2024
-# vcom -work work Sequential_Comp.vho 
+# Start time: 12:09:20 on Jul 03,2024
+# vcom -work work Combanition_com.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -12,43 +12,36 @@
 # -- Loading package cycloneive_components
 # -- Compiling entity hard_block
 # -- Compiling architecture structure of hard_block
-# -- Loading package dffeas_pack
-# -- Loading package altera_primitives_components
-# -- Compiling entity Counter_4bit
-# -- Compiling architecture structure of Counter_4bit
-# End time: 14:24:34 on Jul 03,2024, Elapsed time: 0:00:00
+# -- Compiling entity Decoder_2to4
+# -- Compiling architecture structure of Decoder_2to4
+# End time: 12:09:20 on Jul 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:24:34 on Jul 03,2024
-# vcom -work work Counter_4bit_Waveform.vwf.vht 
+# Start time: 12:09:20 on Jul 03,2024
+# vcom -work work Decoder_2to4_Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity Counter_4bit_vhd_vec_tst
-# -- Compiling architecture Counter_4bit_arch of Counter_4bit_vhd_vec_tst
-# End time: 14:24:34 on Jul 03,2024, Elapsed time: 0:00:00
+# -- Compiling entity Decoder_2to4_vhd_vec_tst
+# -- Compiling architecture Decoder_2to4_arch of Decoder_2to4_vhd_vec_tst
+# End time: 12:09:20 on Jul 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Counter_4bit_vhd_vec_tst 
-# Start time: 14:24:34 on Jul 03,2024
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Decoder_2to4_vhd_vec_tst 
+# Start time: 12:09:20 on Jul 03,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.counter_4bit_vhd_vec_tst(counter_4bit_arch)
+# Loading work.decoder_2to4_vhd_vec_tst(decoder_2to4_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
-# Loading altera.dffeas_pack
-# Loading altera.altera_primitives_components
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
-# Loading work.counter_4bit(structure)
+# Loading work.decoder_2to4(structure)
 # Loading work.hard_block(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)
 # Loading cycloneive.cycloneive_io_ibuf(arch)
-# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
-# Loading cycloneive.cycloneive_ena_reg(behave)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
-# Loading altera.dffeas(vital_dffeas)
-# after#35
-# End time: 14:24:35 on Jul 03,2024, Elapsed time: 0:00:01
+# after#33
+# End time: 12:09:21 on Jul 03,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

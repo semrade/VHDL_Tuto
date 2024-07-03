@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Combanition_com -c Combanition_com --vector_source="D:/20_FPGA_Demo/04_Tuto/Decoder_2to4_Waveform.vwf" --testbench_file="D:/20_FPGA_Demo/04_Tuto/simulation/qsim/Decoder_2to4_Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Sequential_Comp -c Sequential_Comp --vector_source="D:/20_FPGA_Demo/05_Tuto/Counter_4bit_Waveform.vwf" --testbench_file="D:/20_FPGA_Demo/05_Tuto/simulation/qsim/Counter_4bit_Waveform.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,15 +25,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed Jul 03 12:09:15 2024
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Combanition_com -c Combanition_com --vector_source=D:/20_FPGA_Demo/04_Tuto/Decoder_2to4_Waveform.vwf --testbench_file=D:/20_FPGA_Demo/04_Tuto/simulation/qsim/Decoder_2to4_Waveform.vwf.vht
+    Info: Processing started: Wed Jul 03 14:24:29 2024
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Sequential_Comp -c Sequential_Comp --vector_source=D:/20_FPGA_Demo/05_Tuto/Counter_4bit_Waveform.vwf --testbench_file=D:/20_FPGA_Demo/05_Tuto/simulation/qsim/Counter_4bit_Waveform.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/20_FPGA_Demo/04_Tuto/simulation/qsim/" Combanition_com -c Combanition_com
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/20_FPGA_Demo/05_Tuto/simulation/qsim/" Sequential_Comp -c Sequential_Comp
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -51,13 +51,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed Jul 03 12:09:17 2024
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/20_FPGA_Demo/04_Tuto/simulation/qsim/ Combanition_com -c Combanition_com
+    Info: Processing started: Wed Jul 03 14:24:31 2024
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/20_FPGA_Demo/05_Tuto/simulation/qsim/ Sequential_Comp -c Sequential_Comp
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Combanition_com.vho in folder "D:/20_FPGA_Demo/04_Tuto/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Sequential_Comp.vho in folder "D:/20_FPGA_Demo/05_Tuto/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4630 megabytes
-    Info: Processing ended: Wed Jul 03 12:09:19 2024
+    Info: Processing ended: Wed Jul 03 14:24:33 2024
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
@@ -65,26 +65,25 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-D:/20_FPGA_Demo/04_Tuto/simulation/qsim/Combanition_com.do generated.
+D:/20_FPGA_Demo/05_Tuto/simulation/qsim/Sequential_Comp.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/vsim -c -do Combanition_com.do
+C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/vsim -c -do Sequential_Comp.do
 
 Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 
-
 # 10.5b
 
-# do Combanition_com.do
+# do Sequential_Comp.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:09:20 on Jul 03,2024
-# vcom -work work Combanition_com.vho 
 
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:24:34 on Jul 03,2024
+# vcom -work work Sequential_Comp.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -94,54 +93,61 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package cycloneive_components
 # -- Compiling entity hard_block
 # -- Compiling architecture structure of hard_block
-# -- Compiling entity Decoder_2to4
-# -- Compiling architecture structure of Decoder_2to4
-# End time: 12:09:20 on Jul 03,2024, Elapsed time: 0:00:00
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity Counter_4bit
+# -- Compiling architecture structure of Counter_4bit
+# End time: 14:24:34 on Jul 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:09:20 on Jul 03,2024
-# vcom -work work Decoder_2to4_Waveform.vwf.vht 
+# Start time: 14:24:34 on Jul 03,2024
+# vcom -work work Counter_4bit_Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity Decoder_2to4_vhd_vec_tst
-# -- Compiling architecture Decoder_2to4_arch of Decoder_2to4_vhd_vec_tst
-# End time: 12:09:20 on Jul 03,2024, Elapsed time: 0:00:00
+# -- Compiling entity Counter_4bit_vhd_vec_tst
+# -- Compiling architecture Counter_4bit_arch of Counter_4bit_vhd_vec_tst
+# End time: 14:24:34 on Jul 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Decoder_2to4_vhd_vec_tst 
-# Start time: 12:09:20 on Jul 03,2024
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Counter_4bit_vhd_vec_tst 
+# Start time: 14:24:34 on Jul 03,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.decoder_2to4_vhd_vec_tst(decoder_2to4_arch)
+# Loading work.counter_4bit_vhd_vec_tst(counter_4bit_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
-# Loading work.decoder_2to4(structure)
+# Loading work.counter_4bit(structure)
 # Loading work.hard_block(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)
 # Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
-# after#33
+# Loading altera.dffeas(vital_dffeas)
+# after#35
 
-# End time: 12:09:21 on Jul 03,2024, Elapsed time: 0:00:01
+# End time: 14:24:35 on Jul 03,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading D:/20_FPGA_Demo/04_Tuto/Decoder_2to4_Waveform.vwf...
+Reading D:/20_FPGA_Demo/05_Tuto/Counter_4bit_Waveform.vwf...
 
-Reading D:/20_FPGA_Demo/04_Tuto/simulation/qsim/Combanition_com.msim.vcd...
+Reading D:/20_FPGA_Demo/05_Tuto/simulation/qsim/Sequential_Comp.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/20_FPGA_Demo/04_Tuto/simulation/qsim/Combanition_com_20240703120921.sim.vwf
+Writing the resulting VWF to D:/20_FPGA_Demo/05_Tuto/simulation/qsim/Sequential_Comp_20240703142435.sim.vwf
 
 Finished VCD to VWF conversion.
 
