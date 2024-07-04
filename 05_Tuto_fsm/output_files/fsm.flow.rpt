@@ -1,5 +1,5 @@
 Flow report for fsm
-Thu Jul 04 11:26:38 2024
+Thu Jul 04 17:09:26 2024
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Jul 04 11:26:38 2024       ;
+; Flow Status                        ; Successful - Thu Jul 04 17:09:26 2024       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; fsm                                         ;
 ; Top-level Entity Name              ; traffic_light                               ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6F17C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 3 / 6,272 ( < 1 % )                         ;
+;     Total combinational functions  ; 2 / 6,272 ( < 1 % )                         ;
+;     Dedicated logic registers      ; 3 / 6,272 ( < 1 % )                         ;
+; Total registers                    ; 3                                           ;
+; Total pins                         ; 5 / 180 ( 3 % )                             ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/04/2024 11:26:24 ;
+; Start date & time ; 07/04/2024 17:08:54 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; fsm                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+---------------+-------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name   ; Section Id              ;
 +--------------------------------------+----------------------------------------+---------------+---------------+-------------------------+
-; COMPILER_SIGNATURE_ID                ; 159090361224306.172008518311468        ; --            ; --            ; --                      ;
+; COMPILER_SIGNATURE_ID                ; 159090361224306.172010573312088        ; --            ; --            ; --                      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --            ; traffic_light_testbench ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; traffic_light_testbench                ; --            ; --            ; eda_simulation          ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --            ; eda_simulation          ;
@@ -98,29 +98,41 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+---------------+-------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                          ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:16     ; 1.0                     ; 4775 MB             ; 00:00:32                           ;
-; Total                  ; 00:00:16     ; --                      ; --                  ; 00:00:32                           ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 4827 MB             ; 00:00:31                           ;
+; Fitter                    ; 00:00:06     ; 1.0                     ; 5778 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4668 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4786 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4633 MB             ; 00:00:02                           ;
+; Total                     ; 00:00:29     ; --                      ; --                  ; 00:00:44                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                      ;
-+------------------------+------------------+------------+------------+----------------+
-; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; Destop-Tarik     ; Windows 10 ; 10.0       ; x86_64         ;
-+------------------------+------------------+------------+------------+----------------+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; Destop-Tarik     ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; Destop-Tarik     ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; Destop-Tarik     ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; Destop-Tarik     ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Destop-Tarik     ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off fsm -c fsm --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off fsm -c fsm
+quartus_fit --read_settings_files=off --write_settings_files=off fsm -c fsm
+quartus_asm --read_settings_files=off --write_settings_files=off fsm -c fsm
+quartus_sta fsm -c fsm
+quartus_eda --read_settings_files=off --write_settings_files=off fsm -c fsm
 
 
 

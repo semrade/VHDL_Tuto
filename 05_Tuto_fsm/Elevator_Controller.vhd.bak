@@ -23,9 +23,9 @@ architecture Behavioral of elevator is
 begin
 
     -- State transition process
-    state_register:process(clk, n_reset)
+    state_register:process(clk, reset)
     begin
-        if n_reset = '0' then
+        if reset = '0' then
             state <= FLOOR1;
         elsif rising_edge(clk) then
             state <= next_state;

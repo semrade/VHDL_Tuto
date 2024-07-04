@@ -10,7 +10,7 @@ entity vending_machine is
         coin : in STD_LOGIC;
         item_select : in STD_LOGIC;
         cancel : in STD_LOGIC;
-        dispense_item_signal : out STD_LOGIC;
+        dispense_item : out STD_LOGIC;
         return_coins : out STD_LOGIC
     );
 end vending_machine;
@@ -69,7 +69,7 @@ begin
     -- Output logic and total amount update
     process(state, coin, total_amount)
     begin
-        dispense_item_signal <= '0';
+        dispense_item <= '0';
         return_coins <= '0';
 
         case state is
@@ -82,7 +82,7 @@ begin
                 end if;
 
             when DISPENSE_ITEM =>
-                dispense_item_signal <= '1';
+                dispense_item <= '1';
 
             when GIVE_CHANGE =>
                 return_coins <= '1';

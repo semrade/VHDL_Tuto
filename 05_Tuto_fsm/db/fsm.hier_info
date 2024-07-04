@@ -1,8 +1,8 @@
 |traffic_light
 clk => state~1.DATAIN
-reset => state~3.DATAIN
-red << red.DB_MAX_OUTPUT_PORT_TYPE
-yellow << yellow.DB_MAX_OUTPUT_PORT_TYPE
-green << green.DB_MAX_OUTPUT_PORT_TYPE
+n_reset => state~3.DATAIN
+red <= red.DB_MAX_OUTPUT_PORT_TYPE
+yellow <= yellow.DB_MAX_OUTPUT_PORT_TYPE
+green <= green.DB_MAX_OUTPUT_PORT_TYPE
 
 

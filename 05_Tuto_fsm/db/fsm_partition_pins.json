@@ -20,7 +20,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "n_reset",
 					"strict" : false
 				}
 			]

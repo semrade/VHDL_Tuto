@@ -3,13 +3,13 @@ use ieee.STD_LOGIC_1164.ALL;
 use ieee.STD_LOGIC_ARITH.ALL;
 use ieee.STD_LOGIC_UNSIGNED.ALL;
 
-entity traffic_light is
+entity traffic_light_pedes is
     Port ( clk                      : in STD_LOGIC;
            n_reset                  : in STD_LOGIC;
-           red, yellow, green, wlak : out STD_LOGIC);
-end traffic_light;
+           red, yellow, green, walk : out STD_LOGIC);
+end traffic_light_pedes;
 
-architecture Behavioral of traffic_light is
+architecture Behavioral of traffic_light_pedes is
     type state_type is (S_RED, S_GREEN, S_YELLOW);
     signal state, next_state : state_type;
 
