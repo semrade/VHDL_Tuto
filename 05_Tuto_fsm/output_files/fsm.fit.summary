@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Jul 04 11:24:02 2024
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : fsm
+Top-level Entity Name : traffic_light
+Family : Cyclone IV E
+Device : EP4CE6F17C8
+Timing Models : Final
+Total logic elements : 3 / 6,272 ( < 1 % )
+    Total combinational functions : 2 / 6,272 ( < 1 % )
+    Dedicated logic registers : 3 / 6,272 ( < 1 % )
+Total registers : 3
+Total pins : 5 / 180 ( 3 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
