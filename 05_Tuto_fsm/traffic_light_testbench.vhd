@@ -8,7 +8,7 @@ ARCHITECTURE behavior OF traffic_light_testbench IS
 
     COMPONENT traffic_light
     Port ( clk : in STD_LOGIC;
-           reset : in STD_LOGIC;
+           n_reset : in STD_LOGIC;
            red, yellow, green : out STD_LOGIC);
     END COMPONENT;
 
@@ -20,7 +20,7 @@ BEGIN
 
     uut: traffic_light PORT MAP (
         clk => m_clk,
-        reset => m_reset,
+        n_reset => m_reset,
         red => m_red,
         yellow => m_yellow,
 		  green => m_green

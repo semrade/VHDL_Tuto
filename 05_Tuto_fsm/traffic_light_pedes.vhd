@@ -23,9 +23,9 @@ architecture Behavioral of traffic_light is
 begin
 
     -- State transition process
-    process(clk, reset)
+    process(clk, n_reset)
     begin
-        if reset = '0' then
+        if n_reset = '0' then
             state <= S_RED;
             timer <= 0;
         elsif rising_edge(clk) then

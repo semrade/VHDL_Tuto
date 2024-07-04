@@ -23,7 +23,7 @@ architecture Behavioral of elevator is
 begin
 
     -- State transition process
-    process(clk, reset)
+    state_register:process(clk, reset)
     begin
         if reset = '0' then
             state <= FLOOR1;
@@ -33,7 +33,7 @@ begin
     end process;
 
     -- Next state logic
-    process(state, call_floor1, call_floor2, door_close)
+    Next_State_Com_Logic:process(state, call_floor1, call_floor2, door_close)
     begin
         next_state <= state;  -- Default to hold state
         case state is
@@ -63,7 +63,7 @@ begin
     end process;
 
     -- Output logic
-    process(state)
+    Output_Comb_Logic:process(state)
     begin
         move_up <= '0';
         move_down <= '0';

@@ -6,7 +6,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity vending_machine is
     Port (
         clk : in STD_LOGIC;
-        reset : in STD_LOGIC;
+        n_reset : in STD_LOGIC;
         coin : in STD_LOGIC;
         item_select : in STD_LOGIC;
         cancel : in STD_LOGIC;
@@ -24,9 +24,9 @@ architecture Behavioral of vending_machine is
 begin
 
     -- State transition process
-    process(clk, reset)
+    process(clk, n_reset)
     begin
-        if reset = '1' then
+        if n_reset = '0' then
             state <= IDLE;
             total_amount <= 0;
         elsif rising_edge(clk) then
