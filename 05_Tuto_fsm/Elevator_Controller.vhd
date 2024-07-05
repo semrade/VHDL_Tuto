@@ -3,7 +3,7 @@ use ieee.STD_LOGIC_1164.ALL;
 use ieee.STD_LOGIC_ARITH.ALL;
 use ieee.STD_LOGIC_UNSIGNED.ALL;
 
-entity elevator is
+entity elevator_Controller is
     Port (
         clk         : in STD_LOGIC;
         n_reset     : in STD_LOGIC;
@@ -14,9 +14,9 @@ entity elevator is
         move_down   : out STD_LOGIC;
         open_door   : out STD_LOGIC
     );
-end elevator;
+end elevator_Controller;
 
-architecture Behavioral of elevator is
+architecture Behavioral of elevator_Controller is
     type state_type is (FLOOR1, FLOOR2, MOVING_UP, MOVING_DOWN);
     signal state, next_state : state_type;
 

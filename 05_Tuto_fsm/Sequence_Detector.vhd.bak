@@ -1,0 +1,73 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity Sequence_Detector is
+    Port ( clk : in STD_LOGIC;
+           n_reset : in STD_LOGIC;
+           serial_in : in STD_LOGIC;
+           Sequence_Detected : out STD_LOGIC);
+end Sequence_Detector;
+
+architecture Behavioral of Sequence_Detector is
+    type state_type is (IDLE, S1, S10, S101, S1011);
+    signal current_state, next_state : state_type;
+
+begin
+    state_register:process(clk, n_reset)
+    begin
+        if n_reset = '1' then
+            current_state <= IDLE;
+        elsif rising_edge(clk) then
+            current_state <= next_state;
+        end if;
+    end process;
+
+    Output_Comb_Logic:process(current_state, serial_in)
+    begin
+        next_state <= IDLE;  -- Default state
+        Sequence_Detected <= '0';  -- Default output
+        
+        case current_state is
+            when IDLE =>
+                if serial_in = '1' then
+                    next_state <= S1;
+                else
+                    next_state <= IDLE;
+                end if;
+                
+            when S1 =>
+                if serial_in = '0' then
+                    next_state <= S10;
+                else
+                    next_state <= S1;
+                end if;
+                
+            when S10 =>
+                if serial_in = '1' then
+                    next_state <= S101;
+                else
+                    next_state <= IDLE;
+                end if;
+                
+            when S101 =>
+                if serial_in = '1' then
+                    next_state <= S1011;
+                else
+                    next_state <= S10;
+                end if;
+                
+            when S1011 =>
+                Sequence_Detected <= '1';
+                if serial_in = '1' then
+                    next_state <= S1;
+                else
+                    next_state <= IDLE;
+                end if;
+                
+            when others =>
+                next_state <= IDLE;
+        end case;
+    end process;
+end Behavioral;

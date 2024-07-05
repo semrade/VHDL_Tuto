@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Thu Jul 04 17:09:09 2024
+Analysis & Elaboration Status : Successful - Fri Jul 05 15:21:47 2024
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : fsm
-Top-level Entity Name : traffic_light
+Top-level Entity Name : elevator_Controller
 Family : Cyclone IV E
-Total logic elements : 3
-    Total combinational functions : 2
-    Dedicated logic registers : 3
-Total registers : 3
-Total pins : 5
-Total virtual pins : 0
-Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total logic elements : N/A until Partition Merge
+    Total combinational functions : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total memory bits : N/A until Partition Merge
+Embedded Multiplier 9-bit elements : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge

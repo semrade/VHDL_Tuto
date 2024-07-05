@@ -1,6 +1,7 @@
 
-State Machine - |traffic_light|state
-Name state.S_YELLOW state.S_GREEN state.S_RED 
-state.S_RED 0 0 0 
-state.S_GREEN 0 1 1 
-state.S_YELLOW 1 0 1 
+State Machine - |elevator_Controller|state
+Name state.MOVING_DOWN state.MOVING_UP state.FLOOR2 state.FLOOR1 
+state.FLOOR1 0 0 0 0 
+state.FLOOR2 0 0 1 1 
+state.MOVING_UP 0 1 0 1 
+state.MOVING_DOWN 1 0 0 1 

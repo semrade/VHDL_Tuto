@@ -1,6 +1,6 @@
-set tool_name "ModelSim-Altera (Verilog)"
+set tool_name "ModelSim-Altera (VHDL)"
 set corner_file_list {
-    {{"Slow -8 1.2V 85 Model"} {fsm_8_1200mv_85c_slow.vo fsm_8_1200mv_85c_v_slow.sdo}}
-    {{"Slow -8 1.2V 0 Model"} {fsm_8_1200mv_0c_slow.vo fsm_8_1200mv_0c_v_slow.sdo}}
-    {{"Fast -M 1.2V 0 Model"} {fsm_min_1200mv_0c_fast.vo fsm_min_1200mv_0c_v_fast.sdo}}
+    {{"Slow -8 1.2V 85 Model"} {fsm_8_1200mv_85c_slow.vho fsm_8_1200mv_85c_vhd_slow.sdo}}
+    {{"Slow -8 1.2V 0 Model"} {fsm_8_1200mv_0c_slow.vho fsm_8_1200mv_0c_vhd_slow.sdo}}
+    {{"Fast -M 1.2V 0 Model"} {fsm_min_1200mv_0c_fast.vho fsm_min_1200mv_0c_vhd_fast.sdo}}
 }

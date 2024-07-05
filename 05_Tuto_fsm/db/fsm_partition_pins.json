@@ -4,15 +4,19 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "red",
+					"name" : "move_up",
 					"strict" : false
 				},
 				{
-					"name" : "yellow",
+					"name" : "move_down",
 					"strict" : false
 				},
 				{
-					"name" : "green",
+					"name" : "open_door",
+					"strict" : false
+				},
+				{
+					"name" : "call_floor2",
 					"strict" : false
 				},
 				{
@@ -21,6 +25,14 @@
 				},
 				{
 					"name" : "n_reset",
+					"strict" : false
+				},
+				{
+					"name" : "call_floor1",
+					"strict" : false
+				},
+				{
+					"name" : "door_close",
 					"strict" : false
 				}
 			]

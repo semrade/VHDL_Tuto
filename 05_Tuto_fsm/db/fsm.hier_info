@@ -1,8 +1,22 @@
-|traffic_light
+|elevator_Controller
 clk => state~1.DATAIN
 n_reset => state~3.DATAIN
-red <= red.DB_MAX_OUTPUT_PORT_TYPE
-yellow <= yellow.DB_MAX_OUTPUT_PORT_TYPE
-green <= green.DB_MAX_OUTPUT_PORT_TYPE
+call_floor1 => next_state.OUTPUTSELECT
+call_floor1 => next_state.OUTPUTSELECT
+call_floor1 => next_state.OUTPUTSELECT
+call_floor1 => next_state.OUTPUTSELECT
+call_floor2 => next_state.OUTPUTSELECT
+call_floor2 => next_state.OUTPUTSELECT
+call_floor2 => next_state.OUTPUTSELECT
+call_floor2 => next_state.OUTPUTSELECT
+door_close => next_state.OUTPUTSELECT
+door_close => next_state.OUTPUTSELECT
+door_close => next_state.OUTPUTSELECT
+door_close => next_state.OUTPUTSELECT
+door_close => next_state.OUTPUTSELECT
+door_close => next_state.OUTPUTSELECT
+move_up << move_up.DB_MAX_OUTPUT_PORT_TYPE
+move_down << move_down.DB_MAX_OUTPUT_PORT_TYPE
+open_door << open_door.DB_MAX_OUTPUT_PORT_TYPE
 
 
