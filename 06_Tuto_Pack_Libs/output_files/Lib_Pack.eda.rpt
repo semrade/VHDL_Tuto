@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Lib_Pack
-Mon Jul 08 12:22:05 2024
+Tue Jul 09 10:57:25 2024
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -36,9 +36,9 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Jul 08 12:22:05 2024 ;
+; EDA Netlist Writer Status ; Successful - Tue Jul 09 10:57:25 2024 ;
 ; Revision Name             ; Lib_Pack                              ;
-; Top-level Entity Name     ; Lib_Pack                              ;
+; Top-level Entity Name     ; BinaryMultiplier                      ;
 ; Family                    ; Cyclone IV E                          ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -50,7 +50,8 @@ refer to the applicable agreement for further details.
 ; Option                                                                                            ; Setting                ;
 +---------------------------------------------------------------------------------------------------+------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
-; Generate functional simulation netlist                                                            ; On                     ;
+; Generate functional simulation netlist                                                            ; Off                    ;
+; Time scale                                                                                        ; 1 ps                   ;
 ; Truncate long hierarchy paths                                                                     ; Off                    ;
 ; Map illegal HDL characters                                                                        ; Off                    ;
 ; Flatten buses into individual nodes                                                               ; Off                    ;
@@ -65,13 +66,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+-----------------------------------------------------------------+
-; Simulation Generated Files                                      ;
-+-----------------------------------------------------------------+
-; Generated Files                                                 ;
-+-----------------------------------------------------------------+
-; D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/qsim//Lib_Pack.vho ;
-+-----------------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                ;
++-------------------------------------------------------------------------------------------+
+; Generated Files                                                                           ;
++-------------------------------------------------------------------------------------------+
+; D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/Lib_Pack_8_1200mv_85c_slow.vho      ;
+; D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/Lib_Pack_8_1200mv_0c_slow.vho       ;
+; D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/Lib_Pack_min_1200mv_0c_fast.vho     ;
+; D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/Lib_Pack.vho                        ;
+; D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/Lib_Pack_8_1200mv_85c_vhd_slow.sdo  ;
+; D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/Lib_Pack_8_1200mv_0c_vhd_slow.sdo   ;
+; D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/Lib_Pack_min_1200mv_0c_vhd_fast.sdo ;
+; D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/Lib_Pack_vhd.sdo                    ;
++-------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,26 +88,20 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
-    Info: Your use of Intel Corporation's design tools, logic functions 
-    Info: and other software and tools, and its AMPP partner logic 
-    Info: functions, and any output files from any of the foregoing 
-    Info: (including device programming or simulation files), and any 
-    Info: associated documentation or information are expressly subject 
-    Info: to the terms and conditions of the Intel Program License 
-    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
-    Info: the Intel FPGA IP License Agreement, or other applicable license
-    Info: agreement, including, without limitation, that your use is for
-    Info: the sole purpose of programming logic devices manufactured by
-    Info: Intel and sold by Intel or its authorized distributors.  Please
-    Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon Jul 08 12:22:03 2024
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/qsim/ Lib_Pack -c Lib_Pack
+    Info: Processing started: Tue Jul 09 10:57:23 2024
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Lib_Pack -c Lib_Pack
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Lib_Pack.vho in folder "D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Lib_Pack_8_1200mv_85c_slow.vho in folder "D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Lib_Pack_8_1200mv_0c_slow.vho in folder "D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Lib_Pack_min_1200mv_0c_fast.vho in folder "D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Lib_Pack.vho in folder "D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Lib_Pack_8_1200mv_85c_vhd_slow.sdo in folder "D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Lib_Pack_8_1200mv_0c_vhd_slow.sdo in folder "D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Lib_Pack_min_1200mv_0c_vhd_fast.sdo in folder "D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Lib_Pack_vhd.sdo in folder "D:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4629 megabytes
-    Info: Processing ended: Mon Jul 08 12:22:05 2024
+    Info: Peak virtual memory: 4639 megabytes
+    Info: Processing ended: Tue Jul 09 10:57:25 2024
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim
+Ebinarymultiplier
+Z1 w1720515411
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier .vhd
+Z6 FD:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier .vhd
+l0
+L5
+V8OlT:H[;zj^320Uf>eaFz1
+!s100 `S<l9I7^LdW5ngGZGfE4e2
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1720515507
+!i10b 1
+Z9 !s108 1720515507.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier .vhd|
+Z11 !s107 D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier .vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+DEx4 work 16 binarymultiplier 0 22 8OlT:H[;zj^320Uf>eaFz1
+l14
+L13
+V2ezE`mWBoWOPnf<0>m8Ok0
+!s100 _`85BlX7:G3figTDEZnN81
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ebinarymultiplier_testbench
+Z14 w1720515146
+R2
+R3
+R4
+R0
+Z15 8D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier_Testbench.vhd
+Z16 FD:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier_Testbench.vhd
+l0
+L5
+V`9PUa4b4Vn4e[EO=NS@jT0
+!s100 XXzHWW3F:aOQ6TG4]k58^3
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier_Testbench.vhd|
+Z18 !s107 D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier_Testbench.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 26 binarymultiplier_testbench 0 22 `9PUa4b4Vn4e[EO=NS@jT0
+l19
+L8
+VLLBf5:_lbm[VmjnNXSAFD2
+!s100 aejh6kBoI6^MYn0R2YBA72
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
