@@ -10,41 +10,66 @@
 # Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier .vhd}
+# vcom -93 -work work {D:/20_FPGA_Demo/06_Tuto_Pack_Libs/FullAdder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:58:27 on Jul 09,2024
-# vcom -reportprogress 300 -93 -work work D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier .vhd 
+# Start time: 10:49:07 on Jul 10,2024
+# vcom -reportprogress 300 -93 -work work D:/20_FPGA_Demo/06_Tuto_Pack_Libs/FullAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder
+# -- Compiling architecture Behavioral of FullAdder
+# End time: 10:49:07 on Jul 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/20_FPGA_Demo/06_Tuto_Pack_Libs/Ripple_Adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:49:07 on Jul 10,2024
+# vcom -reportprogress 300 -93 -work work D:/20_FPGA_Demo/06_Tuto_Pack_Libs/Ripple_Adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity BinaryMultiplier
-# -- Compiling architecture Behavioral of BinaryMultiplier
-# End time: 10:58:27 on Jul 09,2024, Elapsed time: 0:00:00
+# -- Compiling entity Ripple_Adder
+# -- Compiling architecture Behavioral of Ripple_Adder
+# End time: 10:49:07 on Jul 10,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vcom -93 -work work {D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier_Testbench.vhd}
+# vcom -93 -work work {D:/20_FPGA_Demo/06_Tuto_Pack_Libs/multy.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:58:27 on Jul 09,2024
-# vcom -reportprogress 300 -93 -work work D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier_Testbench.vhd 
+# Start time: 10:49:07 on Jul 10,2024
+# vcom -reportprogress 300 -93 -work work D:/20_FPGA_Demo/06_Tuto_Pack_Libs/multy.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity BinaryMultiplier_Testbench
-# -- Compiling architecture Behavioral of BinaryMultiplier_Testbench
-# End time: 10:58:27 on Jul 09,2024, Elapsed time: 0:00:00
+# -- Compiling entity multy
+# -- Compiling architecture rtl of multy
+# End time: 10:49:07 on Jul 10,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  BinaryMultiplier_Testbench
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" BinaryMultiplier_Testbench 
-# Start time: 10:58:27 on Jul 09,2024
+# vcom -93 -work work {D:/20_FPGA_Demo/06_Tuto_Pack_Libs/multy_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:49:07 on Jul 10,2024
+# vcom -reportprogress 300 -93 -work work D:/20_FPGA_Demo/06_Tuto_Pack_Libs/multy_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multy_tb
+# -- Compiling architecture foo of multy_tb
+# -- Loading package NUMERIC_STD
+# -- Loading entity multy
+# End time: 10:49:07 on Jul 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  multy_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" multy_tb 
+# Start time: 10:49:07 on Jul 10,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.binarymultiplier_testbench(behavioral)
-# Loading work.binarymultiplier(behavioral)
+# Loading work.multy_tb(foo)
+# Loading work.multy(rtl)
+# Loading work.ripple_adder(behavioral)
+# Loading work.fulladder(behavioral)
 # 
 # add wave *
 # view structure
@@ -52,5 +77,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 11:13:38 on Jul 09,2024, Elapsed time: 0:15:11
+# End time: 10:54:11 on Jul 10,2024, Elapsed time: 0:05:04
 # Errors: 0, Warnings: 0

@@ -4,127 +4,67 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "product[0]",
+					"name" : "p[0]",
 					"strict" : false
 				},
 				{
-					"name" : "product[1]",
+					"name" : "p[1]",
 					"strict" : false
 				},
 				{
-					"name" : "product[2]",
+					"name" : "p[2]",
 					"strict" : false
 				},
 				{
-					"name" : "product[3]",
+					"name" : "p[3]",
 					"strict" : false
 				},
 				{
-					"name" : "product[4]",
+					"name" : "p[4]",
 					"strict" : false
 				},
 				{
-					"name" : "product[5]",
+					"name" : "p[5]",
 					"strict" : false
 				},
 				{
-					"name" : "product[6]",
+					"name" : "p[6]",
 					"strict" : false
 				},
 				{
-					"name" : "product[7]",
+					"name" : "p[7]",
 					"strict" : false
 				},
 				{
-					"name" : "product[8]",
+					"name" : "x[0]",
 					"strict" : false
 				},
 				{
-					"name" : "product[9]",
+					"name" : "y[0]",
 					"strict" : false
 				},
 				{
-					"name" : "product[10]",
+					"name" : "x[1]",
 					"strict" : false
 				},
 				{
-					"name" : "product[11]",
+					"name" : "y[1]",
 					"strict" : false
 				},
 				{
-					"name" : "product[12]",
+					"name" : "y[2]",
 					"strict" : false
 				},
 				{
-					"name" : "product[13]",
+					"name" : "x[2]",
 					"strict" : false
 				},
 				{
-					"name" : "product[14]",
+					"name" : "y[3]",
 					"strict" : false
 				},
 				{
-					"name" : "a[0]",
-					"strict" : false
-				},
-				{
-					"name" : "b[0]",
-					"strict" : false
-				},
-				{
-					"name" : "a[1]",
-					"strict" : false
-				},
-				{
-					"name" : "b[1]",
-					"strict" : false
-				},
-				{
-					"name" : "a[2]",
-					"strict" : false
-				},
-				{
-					"name" : "b[2]",
-					"strict" : false
-				},
-				{
-					"name" : "a[3]",
-					"strict" : false
-				},
-				{
-					"name" : "b[3]",
-					"strict" : false
-				},
-				{
-					"name" : "a[4]",
-					"strict" : false
-				},
-				{
-					"name" : "b[4]",
-					"strict" : false
-				},
-				{
-					"name" : "a[5]",
-					"strict" : false
-				},
-				{
-					"name" : "b[5]",
-					"strict" : false
-				},
-				{
-					"name" : "a[6]",
-					"strict" : false
-				},
-				{
-					"name" : "b[6]",
-					"strict" : false
-				},
-				{
-					"name" : "a[7]",
-					"strict" : false
-				},
-				{
-					"name" : "b[7]",
+					"name" : "x[3]",
 					"strict" : false
 				}
 			]

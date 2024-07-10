@@ -1,119 +1,226 @@
-|BinaryMultiplier
-a[0] => result.DATAB
-a[0] => Add0.IN14
-a[0] => Add1.IN14
-a[0] => Add2.IN14
-a[0] => Add3.IN14
-a[0] => Add4.IN14
-a[0] => Add5.IN14
-a[0] => Add6.IN14
-a[1] => result.DATAB
-a[1] => Add0.IN13
-a[1] => Add1.IN13
-a[1] => Add2.IN13
-a[1] => Add3.IN13
-a[1] => Add4.IN13
-a[1] => Add5.IN13
-a[2] => result.DATAB
-a[2] => Add0.IN12
-a[2] => Add1.IN12
-a[2] => Add2.IN12
-a[2] => Add3.IN12
-a[2] => Add4.IN12
-a[3] => result.DATAB
-a[3] => Add0.IN11
-a[3] => Add1.IN11
-a[3] => Add2.IN11
-a[3] => Add3.IN11
-a[4] => result.DATAB
-a[4] => Add0.IN10
-a[4] => Add1.IN10
-a[4] => Add2.IN10
-a[5] => result.DATAB
-a[5] => Add0.IN9
-a[5] => Add1.IN9
-a[6] => result.DATAB
-a[6] => Add0.IN8
-a[7] => result.DATAB
-b[0] => result.OUTPUTSELECT
-b[0] => result.OUTPUTSELECT
-b[0] => result.OUTPUTSELECT
-b[0] => result.OUTPUTSELECT
-b[0] => result.OUTPUTSELECT
-b[0] => result.OUTPUTSELECT
-b[0] => result.OUTPUTSELECT
-b[0] => result.OUTPUTSELECT
-b[1] => result.OUTPUTSELECT
-b[1] => result.OUTPUTSELECT
-b[1] => result.OUTPUTSELECT
-b[1] => result.OUTPUTSELECT
-b[1] => result.OUTPUTSELECT
-b[1] => result.OUTPUTSELECT
-b[1] => result.OUTPUTSELECT
-b[1] => result.OUTPUTSELECT
-b[2] => result.OUTPUTSELECT
-b[2] => result.OUTPUTSELECT
-b[2] => result.OUTPUTSELECT
-b[2] => result.OUTPUTSELECT
-b[2] => result.OUTPUTSELECT
-b[2] => result.OUTPUTSELECT
-b[2] => result.OUTPUTSELECT
-b[2] => result.OUTPUTSELECT
-b[3] => result.OUTPUTSELECT
-b[3] => result.OUTPUTSELECT
-b[3] => result.OUTPUTSELECT
-b[3] => result.OUTPUTSELECT
-b[3] => result.OUTPUTSELECT
-b[3] => result.OUTPUTSELECT
-b[3] => result.OUTPUTSELECT
-b[3] => result.OUTPUTSELECT
-b[4] => result.OUTPUTSELECT
-b[4] => result.OUTPUTSELECT
-b[4] => result.OUTPUTSELECT
-b[4] => result.OUTPUTSELECT
-b[4] => result.OUTPUTSELECT
-b[4] => result.OUTPUTSELECT
-b[4] => result.OUTPUTSELECT
-b[4] => result.OUTPUTSELECT
-b[5] => result.OUTPUTSELECT
-b[5] => result.OUTPUTSELECT
-b[5] => result.OUTPUTSELECT
-b[5] => result.OUTPUTSELECT
-b[5] => result.OUTPUTSELECT
-b[5] => result.OUTPUTSELECT
-b[5] => result.OUTPUTSELECT
-b[5] => result.OUTPUTSELECT
-b[6] => result.OUTPUTSELECT
-b[6] => result.OUTPUTSELECT
-b[6] => result.OUTPUTSELECT
-b[6] => result.OUTPUTSELECT
-b[6] => result.OUTPUTSELECT
-b[6] => result.OUTPUTSELECT
-b[6] => result.OUTPUTSELECT
-b[6] => result.OUTPUTSELECT
-b[7] => result.OUTPUTSELECT
-b[7] => result.OUTPUTSELECT
-b[7] => result.OUTPUTSELECT
-b[7] => result.OUTPUTSELECT
-b[7] => result.OUTPUTSELECT
-b[7] => result.OUTPUTSELECT
-b[7] => result.OUTPUTSELECT
-b[7] => result.OUTPUTSELECT
-product[0] << result.DB_MAX_OUTPUT_PORT_TYPE
-product[1] << result.DB_MAX_OUTPUT_PORT_TYPE
-product[2] << result.DB_MAX_OUTPUT_PORT_TYPE
-product[3] << result.DB_MAX_OUTPUT_PORT_TYPE
-product[4] << result.DB_MAX_OUTPUT_PORT_TYPE
-product[5] << result.DB_MAX_OUTPUT_PORT_TYPE
-product[6] << result.DB_MAX_OUTPUT_PORT_TYPE
-product[7] << result.DB_MAX_OUTPUT_PORT_TYPE
-product[8] << result.DB_MAX_OUTPUT_PORT_TYPE
-product[9] << result.DB_MAX_OUTPUT_PORT_TYPE
-product[10] << result.DB_MAX_OUTPUT_PORT_TYPE
-product[11] << result.DB_MAX_OUTPUT_PORT_TYPE
-product[12] << result.DB_MAX_OUTPUT_PORT_TYPE
-product[13] << result.DB_MAX_OUTPUT_PORT_TYPE
-product[14] << result.DB_MAX_OUTPUT_PORT_TYPE
-product[15] << <GND>
+|multy
+x[0] => G0[0].IN0
+x[0] => G1[0].IN0
+x[0] => G2[0].IN0
+x[0] => p.IN0
+x[1] => G0[1].IN0
+x[1] => G1[1].IN0
+x[1] => G2[1].IN0
+x[1] => B0[0].IN0
+x[2] => G0[2].IN0
+x[2] => G1[2].IN0
+x[2] => G2[2].IN0
+x[2] => B0[1].IN0
+x[3] => G0[3].IN0
+x[3] => G1[3].IN0
+x[3] => G2[3].IN0
+x[3] => B0[2].IN0
+y[0] => B0[2].IN1
+y[0] => B0[1].IN1
+y[0] => B0[0].IN1
+y[0] => p.IN1
+y[1] => G0[3].IN1
+y[1] => G0[2].IN1
+y[1] => G0[1].IN1
+y[1] => G0[0].IN1
+y[2] => G1[3].IN1
+y[2] => G1[2].IN1
+y[2] => G1[1].IN1
+y[2] => G1[0].IN1
+y[3] => G2[3].IN1
+y[3] => G2[2].IN1
+y[3] => G2[1].IN1
+y[3] => G2[0].IN1
+p[0] << p.DB_MAX_OUTPUT_PORT_TYPE
+p[1] << Ripple_Adder:cell_1.S[0]
+p[2] << Ripple_Adder:cell_2.S[0]
+p[3] << Ripple_Adder:cell_3.S[0]
+p[4] << Ripple_Adder:cell_3.S[1]
+p[5] << Ripple_Adder:cell_3.S[2]
+p[6] << Ripple_Adder:cell_3.S[3]
+p[7] << Ripple_Adder:cell_3.Cout
+
+
+|multy|Ripple_Adder:cell_1
+A[0] => Fulladder:FA1.a
+A[1] => Fulladder:FA2.a
+A[2] => Fulladder:FA3.a
+A[3] => Fulladder:FA4.a
+B[0] => Fulladder:FA1.b
+B[1] => Fulladder:FA2.b
+B[2] => Fulladder:FA3.b
+B[3] => Fulladder:FA4.b
+Cin => Fulladder:FA1.cin
+S[0] <= Fulladder:FA1.sum
+S[1] <= Fulladder:FA2.sum
+S[2] <= Fulladder:FA3.sum
+S[3] <= Fulladder:FA4.sum
+Cout <= Fulladder:FA4.cout
+
+
+|multy|Ripple_Adder:cell_1|FullAdder:FA1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multy|Ripple_Adder:cell_1|FullAdder:FA2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multy|Ripple_Adder:cell_1|FullAdder:FA3
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multy|Ripple_Adder:cell_1|FullAdder:FA4
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multy|Ripple_Adder:cell_2
+A[0] => Fulladder:FA1.a
+A[1] => Fulladder:FA2.a
+A[2] => Fulladder:FA3.a
+A[3] => Fulladder:FA4.a
+B[0] => Fulladder:FA1.b
+B[1] => Fulladder:FA2.b
+B[2] => Fulladder:FA3.b
+B[3] => Fulladder:FA4.b
+Cin => Fulladder:FA1.cin
+S[0] <= Fulladder:FA1.sum
+S[1] <= Fulladder:FA2.sum
+S[2] <= Fulladder:FA3.sum
+S[3] <= Fulladder:FA4.sum
+Cout <= Fulladder:FA4.cout
+
+
+|multy|Ripple_Adder:cell_2|FullAdder:FA1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multy|Ripple_Adder:cell_2|FullAdder:FA2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multy|Ripple_Adder:cell_2|FullAdder:FA3
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multy|Ripple_Adder:cell_2|FullAdder:FA4
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multy|Ripple_Adder:cell_3
+A[0] => Fulladder:FA1.a
+A[1] => Fulladder:FA2.a
+A[2] => Fulladder:FA3.a
+A[3] => Fulladder:FA4.a
+B[0] => Fulladder:FA1.b
+B[1] => Fulladder:FA2.b
+B[2] => Fulladder:FA3.b
+B[3] => Fulladder:FA4.b
+Cin => Fulladder:FA1.cin
+S[0] <= Fulladder:FA1.sum
+S[1] <= Fulladder:FA2.sum
+S[2] <= Fulladder:FA3.sum
+S[3] <= Fulladder:FA4.sum
+Cout <= Fulladder:FA4.cout
+
+
+|multy|Ripple_Adder:cell_3|FullAdder:FA1
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multy|Ripple_Adder:cell_3|FullAdder:FA2
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multy|Ripple_Adder:cell_3|FullAdder:FA3
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multy|Ripple_Adder:cell_3|FullAdder:FA4
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 

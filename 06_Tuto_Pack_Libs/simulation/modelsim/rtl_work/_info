@@ -8,85 +8,163 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/20_FPGA_Demo/06_Tuto_Pack_Libs/simulation/modelsim
-Ebinarymultiplier
-Z1 w1720515411
-Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Efulladder
+Z1 w1720516672
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier .vhd
-Z6 FD:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier .vhd
+Z4 8D:/20_FPGA_Demo/06_Tuto_Pack_Libs/FullAdder.vhd
+Z5 FD:/20_FPGA_Demo/06_Tuto_Pack_Libs/FullAdder.vhd
 l0
-L5
-V8OlT:H[;zj^320Uf>eaFz1
-!s100 `S<l9I7^LdW5ngGZGfE4e2
-Z7 OV;C;10.5b;63
+L4
+VQGh:Wc7Xf;oDN=`dfFE6g2
+!s100 _[mUJHeJ7l7IVm_l9bQ6H3
+Z6 OV;C;10.5b;63
 31
-Z8 !s110 1720515507
+Z7 !s110 1720601347
 !i10b 1
-Z9 !s108 1720515507.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier .vhd|
-Z11 !s107 D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier .vhd|
+Z8 !s108 1720601347.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/20_FPGA_Demo/06_Tuto_Pack_Libs/FullAdder.vhd|
+Z10 !s107 D:/20_FPGA_Demo/06_Tuto_Pack_Libs/FullAdder.vhd|
 !i113 1
-Z12 o-93 -work work
-Z13 tExplicit 1 CvgOpt 0
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
 Abehavioral
 R2
 R3
-R4
-DEx4 work 16 binarymultiplier 0 22 8OlT:H[;zj^320Uf>eaFz1
-l14
-L13
-V2ezE`mWBoWOPnf<0>m8Ok0
-!s100 _`85BlX7:G3figTDEZnN81
-R7
+DEx4 work 9 fulladder 0 22 QGh:Wc7Xf;oDN=`dfFE6g2
+l15
+L14
+V>0W^kC>ZMc42YW^mg]0DQ3
+!s100 <98W7IZVKM7bXYK>_K4AP1
+R6
 31
-R8
+R7
 !i10b 1
+R8
 R9
 R10
-R11
 !i113 1
+R11
 R12
-R13
-Ebinarymultiplier_testbench
-Z14 w1720515146
+Emulty
+Z13 w1720600973
 R2
 R3
-R4
 R0
-Z15 8D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier_Testbench.vhd
-Z16 FD:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier_Testbench.vhd
+Z14 8D:/20_FPGA_Demo/06_Tuto_Pack_Libs/multy.vhd
+Z15 FD:/20_FPGA_Demo/06_Tuto_Pack_Libs/multy.vhd
+l0
+L6
+V>8EzPoZ3ndgT_M=>FcZUk2
+!s100 ^_GK32PZl<OT33:I@jV172
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|D:/20_FPGA_Demo/06_Tuto_Pack_Libs/multy.vhd|
+Z17 !s107 D:/20_FPGA_Demo/06_Tuto_Pack_Libs/multy.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+Z18 DEx4 work 5 multy 0 22 >8EzPoZ3ndgT_M=>FcZUk2
+l29
+L14
+V<Ij?EP2D7`bVNJUm4C<;S2
+!s100 [mHCc`f5Ph[i4VXecdBa23
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Emulty_tb
+Z19 w1720601270
+R2
+R3
+R0
+Z20 8D:/20_FPGA_Demo/06_Tuto_Pack_Libs/multy_tb.vhd
+Z21 FD:/20_FPGA_Demo/06_Tuto_Pack_Libs/multy_tb.vhd
+l0
+L4
+VdLOVf]4Yl_FHWKJWhg4_O3
+!s100 BYmJ]e=;I1=bic;VN]:Sd3
+R6
+31
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-93|-work|work|D:/20_FPGA_Demo/06_Tuto_Pack_Libs/multy_tb.vhd|
+Z23 !s107 D:/20_FPGA_Demo/06_Tuto_Pack_Libs/multy_tb.vhd|
+!i113 1
+R11
+R12
+Afoo
+R18
+Z24 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+DEx4 work 8 multy_tb 0 22 dLOVf]4Yl_FHWKJWhg4_O3
+l23
+L7
+VXP]a:X8oXKe_CcbOh`g>M3
+!s100 08^?AgaGY65kTNK9XBWOn3
+R6
+31
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12
+Eripple_adder
+Z25 w1720601217
+R24
+R2
+R3
+R0
+Z26 8D:/20_FPGA_Demo/06_Tuto_Pack_Libs/Ripple_Adder.vhd
+Z27 FD:/20_FPGA_Demo/06_Tuto_Pack_Libs/Ripple_Adder.vhd
 l0
 L5
-V`9PUa4b4Vn4e[EO=NS@jT0
-!s100 XXzHWW3F:aOQ6TG4]k58^3
-R7
+VcBKl3VGf>XK^3N<l2FIe<0
+!s100 OZS:E@]X3I];`7Ie4=RNU2
+R6
 31
-R8
+R7
 !i10b 1
-R9
-Z17 !s90 -reportprogress|300|-93|-work|work|D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier_Testbench.vhd|
-Z18 !s107 D:/20_FPGA_Demo/06_Tuto_Pack_Libs/BinaryMultiplier_Testbench.vhd|
+R8
+Z28 !s90 -reportprogress|300|-93|-work|work|D:/20_FPGA_Demo/06_Tuto_Pack_Libs/Ripple_Adder.vhd|
+Z29 !s107 D:/20_FPGA_Demo/06_Tuto_Pack_Libs/Ripple_Adder.vhd|
 !i113 1
+R11
 R12
-R13
 Abehavioral
+R24
 R2
 R3
-R4
-DEx4 work 26 binarymultiplier_testbench 0 22 `9PUa4b4Vn4e[EO=NS@jT0
-l19
-L8
-VLLBf5:_lbm[VmjnNXSAFD2
-!s100 aejh6kBoI6^MYn0R2YBA72
-R7
+DEx4 work 12 ripple_adder 0 22 cBKl3VGf>XK^3N<l2FIe<0
+l29
+L13
+Vc?B8LM`cc:VbafbzNNkji2
+!s100 OzRD`f[IRA67]Ug0_`3U01
+R6
 31
-R8
+R7
 !i10b 1
-R9
-R17
-R18
+R8
+R28
+R29
 !i113 1
+R11
 R12
-R13

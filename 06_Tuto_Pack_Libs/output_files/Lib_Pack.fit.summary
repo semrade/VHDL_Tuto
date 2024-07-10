@@ -1,15 +1,15 @@
-Fitter Status : Successful - Tue Jul 09 10:57:15 2024
+Fitter Status : Successful - Wed Jul 10 11:09:40 2024
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : Lib_Pack
-Top-level Entity Name : BinaryMultiplier
+Top-level Entity Name : multy
 Family : Cyclone IV E
 Device : EP4CE6F17C8
 Timing Models : Final
-Total logic elements : 120 / 6,272 ( 2 % )
-    Total combinational functions : 120 / 6,272 ( 2 % )
+Total logic elements : 31 / 6,272 ( < 1 % )
+    Total combinational functions : 31 / 6,272 ( < 1 % )
     Dedicated logic registers : 0 / 6,272 ( 0 % )
 Total registers : 0
-Total pins : 32 / 180 ( 18 % )
+Total pins : 16 / 180 ( 9 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
