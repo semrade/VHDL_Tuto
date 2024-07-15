@@ -1,0 +1,49 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity ParametrizedALU is
+  generic (
+    WIDTH : integer := 32;
+    OPERATIONS : integer := 4
+  );
+  port (
+    A       : in  std_logic_vector(WIDTH-1 downto 0);
+    B       : in  std_logic_vector(WIDTH-1 downto 0);
+    Op      : in  std_logic_vector(log2ceil(OPERATIONS)-1 downto 0);
+    Result  : out std_logic_vector(WIDTH-1 downto 0);
+    CarryOut: out std_logic
+  );
+end entity ParametrizedALU;
+
+architecture Behavioral of ParametrizedALU is
+  function log2ceil(x: integer) return integer is
+    variable i: integer := 0;
+  begin
+    while 2**i < x loop
+      i := i + 1;
+    end loop;
+    return i;
+  end function;
+begin
+  process(A, B, Op)
+  begin
+    case Op is
+      when "00" =>
+        Result <= std_logic_vector(unsigned(A) + unsigned(B));
+        CarryOut <= '1' when unsigned(A) + unsigned(B) > 2**WIDTH-1 else '0';
+      when "01" =>
+        Result <= std_logic_vector(unsigned(A) - unsigned(B));
+        CarryOut <= '0'; -- No carry out for subtraction
+      when "10" =>
+        Result <= A and B;
+        CarryOut <= '0';
+      when "11" =>
+        Result <= A or B;
+        CarryOut <= '0';
+      when others =>
+        Result <= (others => '0');
+        CarryOut <= '0';
+    end case;
+  end process;
+end architecture Behavioral;

@@ -1,0 +1,49 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use IEEE.STD_LOGIC_TEXTIO.ALL;
+use STD.TEXTIO.ALL;
+
+entity ConfigurableModule is
+  port (
+    clk   : in  std_logic;
+    reset : in  std_logic;
+    data_in  : in  std_logic_vector(15 downto 0);
+    data_out : out std_logic_vector(15 downto 0)
+  );
+end entity ConfigurableModule;
+
+architecture Behavioral of ConfigurableModule is
+  constant FILE_NAME : string := "config.txt";
+  signal data_width : integer;
+  signal depth : integer;
+  type memory_type is array (0 to depth-1) of std_logic_vector(data_width-1 downto 0);
+  signal memory : memory_type;
+  signal wr_ptr : integer := 0;
+begin
+
+  process(clk, reset)
+    file config_file : text open read_mode is FILE_NAME;
+    variable line_content : line;
+    variable width, depth_var : integer;
+  begin
+    if reset = '1' then
+      data_out <= (others => '0');
+    elsif rising_edge(clk) then
+      if endfile(config_file) = false then
+        readline(config_file, line_content);
+        read(line_content, width);
+        readline(config_file, line_content);
+        read(line_content, depth_var);
+        data_width <= width;
+        depth <= depth_var;
+      end if;
+      -- Example usage of data_width and depth
+      if wr_ptr < depth then
+        memory(wr_ptr) <= data_in;
+        wr_ptr <= wr_ptr + 1;
+      end if;
+      data_out <= memory(wr_ptr - 1);
+    end if;
+  end process;
+end architecture Behavioral;
