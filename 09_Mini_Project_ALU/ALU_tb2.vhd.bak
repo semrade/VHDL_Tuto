@@ -1,0 +1,55 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.numeric_std.ALL;
+
+entity ALU_tb2 is
+end ALU_tb2;
+
+architecture Behavioral of ALU_tb is
+    signal A       : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
+    signal B       : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
+    signal ALU_Sel : STD_LOGIC_VECTOR(2 downto 0) := (others => '0');
+    signal Result  : STD_LOGIC_VECTOR(63 downto 0);
+    
+    component ALU
+        Port (
+            A       : in  STD_LOGIC_VECTOR(31 downto 0);
+            B       : in  STD_LOGIC_VECTOR(31 downto 0);
+            ALU_Sel : in  STD_LOGIC_VECTOR(2 downto 0);
+            Result  : out STD_LOGIC_VECTOR(63 downto 0)
+        );
+    end component;
+    
+begin
+    uut: ALU
+        Port map (
+            A       => A,
+            B       => B,
+            ALU_Sel => ALU_Sel,
+            Result  => Result
+        );
+        
+    -- Test process
+    process
+    begin
+        -- Initialize signals
+        A <= (others => '0');
+        B <= (others => '0');
+        ALU_Sel <= (others => '0');
+        wait for 10 ns;
+
+        -- Test Multiplication
+        A <= "00000000000000000000000000001010"; -- 10
+        B <= "00000000000000000000000000000101"; -- 5
+        ALU_Sel <= "010"; -- Multiplication
+        wait for 20 ns;
+
+        -- Check the result
+        assert Result = "0000000000000000000000000000000000000000000000000000000000110010" -- 50 in binary
+        report "Multiplication test failed" severity error;
+        
+        -- You can add more test cases here
+        
+        wait;
+    end process;
+end Behavioral;
