@@ -12,7 +12,7 @@ entity ALU is
 end ALU;
 
 architecture Behavioral of ALU is
-    signal Mul_Result : unsigned(63 downto 0);  -- Intermediate signal for multiplication result
+
 begin
     process(A, B, ALU_Sel)
     begin
@@ -22,8 +22,8 @@ begin
             when "001" =>  -- Subtraction
                 Result <= std_logic_vector(resize(unsigned(A), 64) - resize(unsigned(B), 64));
             when "010" =>  -- Multiplication
-                Mul_Result <= unsigned(A) * unsigned(B);
-                Result <= std_logic_vector(Mul_Result);
+                Result <= std_logic_vector(unsigned(A) * unsigned(B));
+                --Result <= std_logic_vector(Mul_Result);
             when "011" =>  -- Division
                 if B /= "00000000000000000000000000000000" then
                     Result <= std_logic_vector(resize(unsigned(A) / unsigned(B), 64));

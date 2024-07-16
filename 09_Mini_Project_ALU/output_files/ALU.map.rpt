@@ -1,5 +1,5 @@
 Analysis & Elaboration report for ALU
-Tue Jul 16 10:35:00 2024
+Tue Jul 16 14:51:41 2024
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Tue Jul 16 10:35:00 2024       ;
+; Analysis & Elaboration Status      ; Successful - Tue Jul 16 14:51:41 2024       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
 ; Top-level Entity Name              ; ALU                                         ;
@@ -161,7 +161,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Jul 16 10:34:44 2024
+    Info: Processing started: Tue Jul 16 14:51:26 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -171,77 +171,14 @@ Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file alu_tb.vhd
     Info (12022): Found design unit 1: ALU_tb-Behavioral File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb.vhd Line: 9
     Info (12023): Found entity 1: ALU_tb File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file alu_tb2.vhd
+    Info (12022): Found design unit 1: ALU_tb2-Behavioral File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb2.vhd Line: 8
+    Info (12023): Found entity 1: ALU_tb2 File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb2.vhd Line: 5
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at ALU.vhd(26): signal "Mul_Result" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 26
-Warning (10631): VHDL Process Statement warning at ALU.vhd(17): inferring latch(es) for signal or variable "Mul_Result", which holds its previous value in one or more paths through the process File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[0]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[1]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[2]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[3]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[4]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[5]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[6]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[7]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[8]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[9]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[10]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[11]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[12]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[13]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[14]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[15]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[16]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[17]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[18]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[19]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[20]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[21]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[22]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[23]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[24]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[25]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[26]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[27]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[28]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[29]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[30]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[31]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[32]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[33]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[34]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[35]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[36]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[37]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[38]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[39]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[40]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[41]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[42]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[43]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[44]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[45]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[46]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[47]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[48]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[49]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[50]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[51]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[52]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[53]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[54]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[55]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[56]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[57]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[58]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[59]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[60]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[61]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[62]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info (10041): Inferred latch for "Mul_Result[63]" at ALU.vhd(17) File: D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd Line: 17
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4780 megabytes
-    Info: Processing ended: Tue Jul 16 10:35:00 2024
-    Info: Elapsed time: 00:00:16
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4781 megabytes
+    Info: Processing ended: Tue Jul 16 14:51:41 2024
+    Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:31
 
 

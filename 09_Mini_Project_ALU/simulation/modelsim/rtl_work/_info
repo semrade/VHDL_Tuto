@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/20_FPGA_Demo/09_Mini_Project_ALU/simulation/modelsim
 Ealu
-Z1 w1721118806
+Z1 w1721131404
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -22,14 +22,14 @@ V>M]_c_T`HX28]kf4FNVMi1
 !s100 1IcBob[Na1PV8SLj^S;I_3
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1721120051
+!s110 1721134312
 !i10b 1
-Z9 !s108 1721120051.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd|
-Z11 !s107 D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd|
+Z8 !s108 1721134312.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd|
+Z10 !s107 D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd|
 !i113 1
-Z12 o-93 -work work
-Z13 tExplicit 1 CvgOpt 0
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
 Abehavioral
 R2
 R3
@@ -37,58 +37,56 @@ R4
 DEx4 work 3 alu 0 22 >M]_c_T`HX28]kf4FNVMi1
 l16
 L14
-V?]dEc>iDchd0G`Wzg^1Md3
-!s100 WhYX7BIW0d>VnnMC0GeKB1
+V6Y>]4hO_[G`YJDZKTCK:e2
+!s100 MP1ZRe2SVoi9:Q_`1kNA80
 R7
 31
-R8
+Z13 !s110 1721134313
 !i10b 1
+R8
 R9
 R10
-R11
 !i113 1
+R11
 R12
-R13
-Ealu_tb
-Z14 w1721117949
-Z15 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z16 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Ealu_tb2
+Z14 w1721119921
+R2
 R3
 R4
 R0
-Z17 8D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb.vhd
-Z18 FD:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb.vhd
+Z15 8D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb2.vhd
+Z16 FD:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb2.vhd
 l0
-L6
-VCPTEEb3IN0X^D64dW>P4A3
-!s100 RSmo9oBo>UWmPe>H3[_d?1
+L5
+V9XRC4FKMHBJRoH3Y`M5iB3
+!s100 =7M8K0?1jmO2EAlTzT]WU0
 R7
 31
-R8
-!i10b 1
-R9
-Z19 !s90 -reportprogress|300|-93|-work|work|D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb.vhd|
-Z20 !s107 D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb.vhd|
-!i113 1
-R12
 R13
+!i10b 1
+Z17 !s108 1721134313.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb2.vhd|
+Z19 !s107 D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb2.vhd|
+!i113 1
+R11
+R12
 Abehavioral
-R15
-R16
+R2
 R3
 R4
-DEx4 work 6 alu_tb 0 22 CPTEEb3IN0X^D64dW>P4A3
-l29
-L9
-VgJ_Uo:z1kBmYQTeVRaAQ_2
-!s100 mZLDbG0@ZLdg3zT=d[elJ1
+DEx4 work 7 alu_tb2 0 22 9XRC4FKMHBJRoH3Y`M5iB3
+l23
+L8
+V`L]c:DeO>cMbFDS9`JNdz2
+!s100 lG2]PA7fJc]76=D`FjMh93
 R7
 31
-R8
-!i10b 1
-R9
-R19
-R20
-!i113 1
-R12
 R13
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12

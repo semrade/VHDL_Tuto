@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:54:11 on Jul 16,2024
+# Start time: 14:51:52 on Jul 16,2024
 # vcom -reportprogress 300 -93 -work work D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,45 +20,42 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ALU
 # -- Compiling architecture Behavioral of ALU
-# End time: 10:54:11 on Jul 16,2024, Elapsed time: 0:00:00
+# End time: 14:51:53 on Jul 16,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb.vhd}
+# vcom -93 -work work {D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:54:11 on Jul 16,2024
-# vcom -reportprogress 300 -93 -work work D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb.vhd 
+# Start time: 14:51:53 on Jul 16,2024
+# vcom -reportprogress 300 -93 -work work D:/20_FPGA_Demo/09_Mini_Project_ALU/ALU_tb2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity ALU_tb
-# -- Compiling architecture Behavioral of ALU_tb
-# End time: 10:54:11 on Jul 16,2024, Elapsed time: 0:00:00
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_tb2
+# -- Compiling architecture Behavioral of ALU_tb2
+# End time: 14:51:53 on Jul 16,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  ALU_tb
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" ALU_tb 
-# Start time: 10:54:11 on Jul 16,2024
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  ALU_tb2
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" ALU_tb2 
+# Start time: 14:51:53 on Jul 16,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.alu_tb(behavioral)
 # Loading ieee.numeric_std(body)
+# Loading work.alu_tb2(behavioral)
 # Loading work.alu(behavioral)
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Tarik  Hostname: DESTOP-TARIK  ProcessID: 19144
-#           Attempting to use alternate WLF file "./wlftxdq90g".
+#           Attempting to use alternate WLF file "./wlfts6k4z7".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftxdq90g
+#           Using alternate file: ./wlfts6k4z7
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 10:55:46 on Jul 16,2024, Elapsed time: 0:01:35
+# End time: 14:52:45 on Jul 16,2024, Elapsed time: 0:00:52
 # Errors: 0, Warnings: 2
