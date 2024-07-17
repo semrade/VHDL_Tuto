@@ -28,87 +28,22 @@
 
 (DELAYFILE
   (SDFVERSION "2.1")
-  (DESIGN "fulladder")
-  (DATE "07/15/2024 11:21:11")
+  (DESIGN "ConfigurableModule")
+  (DATE "07/17/2024 10:19:21")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition")
   (DIVIDER .)
   (TIMESCALE 1 ps)
 
+	// No Timing Cells with timing info are found in the compiled design. A dummy dff Timing Cell is created.
   (CELL
-    (CELLTYPE "cycloneive_io_obuf")
-    (INSTANCE \\Sum\~output\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT i (257:257:257) (282:282:282))
-        (IOPATH i o (1599:1599:1599) (1624:1624:1624))
-      )
-    )
+    (CELLTYPE "dff")
+    (INSTANCE * )
   )
+	// No Timing Cells with timing info are found in the compiled design. A dummy dff Timing Cell is created.
   (CELL
-    (CELLTYPE "cycloneive_io_obuf")
-    (INSTANCE \\C_out\~output\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT i (392:392:392) (437:437:437))
-        (IOPATH i o (2466:2466:2466) (2527:2527:2527))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE \\B\~input\\)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH i o (308:308:308) (688:688:688))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE \\C_in\~input\\)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH i o (298:298:298) (678:678:678))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE \\A\~input\\)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH i o (298:298:298) (678:678:678))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\inst1\~0\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (1555:1555:1555) (1735:1735:1735))
-        (PORT datab (1569:1569:1569) (1748:1748:1748))
-        (PORT datac (1707:1707:1707) (1896:1896:1896))
-        (IOPATH dataa combout (195:195:195) (193:193:193))
-        (IOPATH datab combout (196:196:196) (193:193:193))
-        (IOPATH datac combout (120:120:120) (125:125:125))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\inst4\~0\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT dataa (1555:1555:1555) (1734:1734:1734))
-        (PORT datab (1570:1570:1570) (1748:1748:1748))
-        (PORT datac (1707:1707:1707) (1896:1896:1896))
-        (IOPATH dataa combout (170:170:170) (163:163:163))
-        (IOPATH datab combout (168:168:168) (167:167:167))
-        (IOPATH datac combout (119:119:119) (124:124:124))
-      )
-    )
+    (CELLTYPE "dff")
+    (INSTANCE * )
   )
 )

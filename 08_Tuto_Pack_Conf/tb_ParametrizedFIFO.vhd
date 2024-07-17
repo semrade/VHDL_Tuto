@@ -30,7 +30,7 @@ begin
     )
     port map (
       clk     => clk,
-      reset   => reset,
+      n_reset   => reset,
       wr_en   => wr_en,
       rd_en   => rd_en,
       data_in => data_in,
@@ -52,9 +52,9 @@ begin
   stim_proc: process
   begin		
     -- Reset the FIFO
-    reset <= '1';
-    wait for clk_period*2;
     reset <= '0';
+    wait for clk_period*2;
+    reset <= '1';
     wait for clk_period*2;
     
     -- Write to the FIFO

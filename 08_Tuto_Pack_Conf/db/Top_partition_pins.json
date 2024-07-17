@@ -2,28 +2,7 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : [
-				{
-					"name" : "Sum",
-					"strict" : false
-				},
-				{
-					"name" : "C_out",
-					"strict" : false
-				},
-				{
-					"name" : "A",
-					"strict" : false
-				},
-				{
-					"name" : "B",
-					"strict" : false
-				},
-				{
-					"name" : "C_in",
-					"strict" : false
-				}
-			]
+			"pins" : []
 		}
 	]
 }

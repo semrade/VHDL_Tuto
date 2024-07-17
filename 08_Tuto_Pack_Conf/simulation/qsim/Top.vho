@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition"
 
--- DATE "07/11/2024 12:04:11"
+-- DATE "07/17/2024 09:29:58"
 
 -- 
 -- Device: Altera EP4CE6F17C8 Package FBGA256
@@ -81,7 +81,7 @@ ENTITY 	TopLevel IS
 	clk : IN std_logic;
 	n_reset : IN std_logic;
 	data_in : IN std_logic_vector(15 DOWNTO 0);
-	data_out : OUT std_logic_vector(15 DOWNTO 0)
+	data_out : BUFFER std_logic_vector(15 DOWNTO 0)
 	);
 END TopLevel;
 

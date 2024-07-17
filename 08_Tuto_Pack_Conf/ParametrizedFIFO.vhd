@@ -9,7 +9,7 @@ entity ParametrizedFIFO is
   );
   port (
     clk     : in  std_logic;
-    reset   : in  std_logic;
+    n_reset   : in  std_logic;
     wr_en   : in  std_logic;
     rd_en   : in  std_logic;
     data_in : in  std_logic_vector(DATA_WIDTH-1 downto 0);
@@ -26,9 +26,9 @@ architecture Behavioral of ParametrizedFIFO is
   signal rd_ptr     : integer range 0 to DEPTH-1 := 0;
   signal fifo_count : integer range 0 to DEPTH := 0;
 begin
-  process(clk, reset)
+  process(clk, n_reset)
   begin
-    if reset = '1' then
+    if n_reset = '0' then
       wr_ptr <= 0;
       rd_ptr <= 0;
       fifo_count <= 0;

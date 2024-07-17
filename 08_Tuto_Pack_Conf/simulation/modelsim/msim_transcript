@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {D:/20_FPGA_Demo/08_Tuto_Pack_Conf/ConfigurableModule.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:22:50 on Jul 12,2024
+# Start time: 10:20:52 on Jul 17,2024
 # vcom -reportprogress 300 -93 -work work D:/20_FPGA_Demo/08_Tuto_Pack_Conf/ConfigurableModule.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -22,12 +22,12 @@
 # -- Compiling entity ConfigurableModule
 # -- Compiling architecture Behavioral of ConfigurableModule
 # ** Warning: D:/20_FPGA_Demo/08_Tuto_Pack_Conf/ConfigurableModule.vhd(20): (vcom-1013) Type "memory_type" depends on value of signal "depth".
-# End time: 15:22:50 on Jul 12,2024, Elapsed time: 0:00:00
+# End time: 10:20:52 on Jul 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # 
 # vcom -93 -work work {D:/20_FPGA_Demo/08_Tuto_Pack_Conf/ConfigurableModule_tb.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:22:50 on Jul 12,2024
+# Start time: 10:20:52 on Jul 17,2024
 # vcom -reportprogress 300 -93 -work work D:/20_FPGA_Demo/08_Tuto_Pack_Conf/ConfigurableModule_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -36,12 +36,12 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity ConfigurableModule_tb
 # -- Compiling architecture Behavioral of ConfigurableModule_tb
-# End time: 15:22:50 on Jul 12,2024, Elapsed time: 0:00:00
+# End time: 10:20:52 on Jul 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  ConfigurableModule_tb
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" ConfigurableModule_tb 
-# Start time: 15:22:50 on Jul 12,2024
+# Start time: 10:20:52 on Jul 17,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -55,13 +55,13 @@
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Tarik  Hostname: DESTOP-TARIK  ProcessID: 1100
-#           Attempting to use alternate WLF file "./wlftg6cwba".
+#           Attempting to use alternate WLF file "./wlftt6ewh6".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftg6cwba
+#           Using alternate file: ./wlftt6ewh6
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 15:23:41 on Jul 12,2024, Elapsed time: 0:00:51
+# End time: 11:38:12 on Jul 17,2024, Elapsed time: 1:17:20
 # Errors: 0, Warnings: 2

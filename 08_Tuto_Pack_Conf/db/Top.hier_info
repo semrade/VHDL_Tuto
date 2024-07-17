@@ -1,11 +1,37 @@
-|fulladder
-Sum <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst3.IN0
-B => inst.IN1
-B => inst3.IN1
-C_in => inst1.IN1
-C_in => inst2.IN0
-C_out <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+|ConfigurableModule
+clk => ~NO_FANOUT~
+n_reset => ~NO_FANOUT~
+data_in[0] => ~NO_FANOUT~
+data_in[1] => ~NO_FANOUT~
+data_in[2] => ~NO_FANOUT~
+data_in[3] => ~NO_FANOUT~
+data_in[4] => ~NO_FANOUT~
+data_in[5] => ~NO_FANOUT~
+data_in[6] => ~NO_FANOUT~
+data_in[7] => ~NO_FANOUT~
+data_in[8] => ~NO_FANOUT~
+data_in[9] => ~NO_FANOUT~
+data_in[10] => ~NO_FANOUT~
+data_in[11] => ~NO_FANOUT~
+data_in[12] => ~NO_FANOUT~
+data_in[13] => ~NO_FANOUT~
+data_in[14] => ~NO_FANOUT~
+data_in[15] => ~NO_FANOUT~
+data_out[0] << <GND>
+data_out[1] << <GND>
+data_out[2] << <GND>
+data_out[3] << <GND>
+data_out[4] << <GND>
+data_out[5] << <GND>
+data_out[6] << <GND>
+data_out[7] << <GND>
+data_out[8] << <GND>
+data_out[9] << <GND>
+data_out[10] << <GND>
+data_out[11] << <GND>
+data_out[12] << <GND>
+data_out[13] << <GND>
+data_out[14] << <GND>
+data_out[15] << <GND>
 
 

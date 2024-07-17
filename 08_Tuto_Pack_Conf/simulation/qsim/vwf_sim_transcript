@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Top -c Top --vector_source="D:/20_FPGA_Demo/08_Tuto_Pack_Conf/Waveform_buffer.vwf" --testbench_file="D:/20_FPGA_Demo/08_Tuto_Pack_Conf/simulation/qsim/Waveform_buffer.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Top -c Top --vector_source="D:/20_FPGA_Demo/08_Tuto_Pack_Conf/Waveform_TopLevel.vwf" --testbench_file="D:/20_FPGA_Demo/08_Tuto_Pack_Conf/simulation/qsim/Waveform_TopLevel.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,8 +25,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Jul 11 12:04:07 2024
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Top -c Top --vector_source=D:/20_FPGA_Demo/08_Tuto_Pack_Conf/Waveform_buffer.vwf --testbench_file=D:/20_FPGA_Demo/08_Tuto_Pack_Conf/simulation/qsim/Waveform_buffer.vwf.vht
+    Info: Processing started: Wed Jul 17 09:29:55 2024
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Top -c Top --vector_source=D:/20_FPGA_Demo/08_Tuto_Pack_Conf/Waveform_TopLevel.vwf --testbench_file=D:/20_FPGA_Demo/08_Tuto_Pack_Conf/simulation/qsim/Waveform_TopLevel.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -51,13 +51,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Jul 11 12:04:09 2024
+    Info: Processing started: Wed Jul 17 09:29:57 2024
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/20_FPGA_Demo/08_Tuto_Pack_Conf/simulation/qsim/ Top -c Top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Top.vho in folder "D:/20_FPGA_Demo/08_Tuto_Pack_Conf/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4630 megabytes
-    Info: Processing ended: Thu Jul 11 12:04:11 2024
+    Info: Processing ended: Wed Jul 17 09:29:59 2024
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
@@ -75,16 +75,18 @@ C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/vsim -c -do Top.do
 
 Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 
+
 # 10.5b
 
 # do Top.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:04:12 on Jul 11,2024
-# vcom -work work Top.vho 
 
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:30:00 on Jul 17,2024
+# vcom -work work Top.vho 
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
@@ -97,22 +99,22 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package altera_primitives_components
 # -- Compiling entity TopLevel
 # -- Compiling architecture structure of TopLevel
-# End time: 12:04:12 on Jul 11,2024, Elapsed time: 0:00:00
+# End time: 09:30:00 on Jul 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:04:12 on Jul 11,2024
-# vcom -work work Waveform_buffer.vwf.vht 
+# Start time: 09:30:00 on Jul 17,2024
+# vcom -work work Waveform_TopLevel.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity TopLevel_vhd_vec_tst
 # -- Compiling architecture TopLevel_arch of TopLevel_vhd_vec_tst
-# End time: 12:04:12 on Jul 11,2024, Elapsed time: 0:00:00
+# End time: 09:30:00 on Jul 17,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.TopLevel_vhd_vec_tst 
-# Start time: 12:04:12 on Jul 11,2024
+# Start time: 09:30:00 on Jul 17,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -134,20 +136,20 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading altera.dffeas(vital_dffeas)
 # after#35
 
-# End time: 12:04:13 on Jul 11,2024, Elapsed time: 0:00:01
+# End time: 09:30:01 on Jul 17,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading D:/20_FPGA_Demo/08_Tuto_Pack_Conf/Waveform_buffer.vwf...
+Reading D:/20_FPGA_Demo/08_Tuto_Pack_Conf/Waveform_TopLevel.vwf...
 
 Reading D:/20_FPGA_Demo/08_Tuto_Pack_Conf/simulation/qsim/Top.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/20_FPGA_Demo/08_Tuto_Pack_Conf/simulation/qsim/Top_20240711120413.sim.vwf
+Writing the resulting VWF to D:/20_FPGA_Demo/08_Tuto_Pack_Conf/simulation/qsim/Top_20240717093001.sim.vwf
 
 Finished VCD to VWF conversion.
 
